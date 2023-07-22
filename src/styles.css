@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+.demo{
+    text-align: center;
+    color: darksalmon;
+}
+
+.observable{
+    color: cornflowerblue;
+    padding-bottom: 3px;
+}
+
+.subject{
+    color: cornflowerblue;
+    padding-bottom: 3px;
+}
+
+.main{
+    padding: 3%;
+    text-align: center;
+}

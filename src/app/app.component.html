@@ -1,0 +1,27 @@
+<h1 class="demo">{{title}}</h1>
+<div class="main">
+  <h2 class="observable">Observable</h2>
+  <h3>Subscriber 1: {{first_subscriber_observable}}</h3>
+  <h3>Subscriber 2: {{second_subscriber_observable}}</h3>
+  <h3>Subscriber 3: {{thrid_subscriber_observable}}</h3>
+
+  <h2 class="subject">Subject</h2>
+  <h3>Subscriber 1: {{first_subscriber_subject}}</h3>
+  <h3>Subscriber 2: {{second_subscriber_subject}}</h3>
+  <h3>Subscriber 3: {{third_subscriber_subject}}</h3>
+
+  <h2 class="observable">Behavior Subject (Behavior Subject has default or last emitted value)</h2>
+  <h3>Subscriber 1: {{first_subscriber_behaviorSubject}}</h3>
+  <h3>Subscriber 2: {{second_subscriber_behaviorSubject}}</h3>
+
+  <h2 class="observable">Replay Subject (Replay a fixed amount of values to new subscribers)</h2>
+  <h3>Subscriber 1:</h3>
+  <h3 *ngFor="let value of first_subscriber_replaySubject">{{ value }}</h3>
+  <h3>Subscriber 2:</h3>
+  <h3 *ngFor="let value of second_subscriber_replaySubject">{{ value }}</h3>
+
+  <h2 class="observable">Async Subject (Async subject sends the latest value to subscribers when it's completed)</h2>
+  <h3>Subscriber 1: {{first_subscriber_asyncSubject}}</h3>
+  <h3>Subscriber 2: {{second_subscriber_asyncSubject}}</h3>
+
+</div>
